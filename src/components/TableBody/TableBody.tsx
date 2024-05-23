@@ -9,11 +9,7 @@ type TableBodyProps = {
   sortedRows: RowType[];
 };
 
-const TableBody: React.FC<TableBodyProps> = ({
-  columns,
-  filteredRows,
-  sortedRows,
-}) => {
+const TableBody: React.FC<TableBodyProps> = ({ columns, sortedRows }) => {
   return (
     <tbody className={style["tbody"]}>
       {/* {rows.map((row) => ( */}
