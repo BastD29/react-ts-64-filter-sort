@@ -3,9 +3,13 @@
 const SET_FILTER = "SET_FILTER";
 const CLEAR_FILTER = "CLEAR_FILTER";
 
-// DATA
+// ROWS
 
-const SET_DATA = "SET_DATA";
+const SET_ROWS = "SET_ROWS";
+
+// COLUMNS
+
+const SET_COLUMNS = "SET_COLUMNS";
 
 // SORT
 
@@ -16,7 +20,9 @@ export {
   SET_FILTER,
   CLEAR_FILTER,
   //
-  SET_DATA,
+  SET_ROWS,
+  //
+  SET_COLUMNS,
   //
   SET_SORT,
   CLEAR_SORT,

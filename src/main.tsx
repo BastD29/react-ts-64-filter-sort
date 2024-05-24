@@ -1,18 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./components/App/App6";
-import "./style/index.scss";
-import { DataProvider } from "./context/DataContext/DataProvider";
+import App from "./components/App/App7";
+import { RowsProvider } from "./context/RowsContext/RowsProvider";
 import { FilterProvider } from "./context/FilterContext/FilterProvider";
 import { SortProvider } from "./context/SortContext/SortProvider";
+import "./style/index.scss";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <SortProvider>
       <FilterProvider>
-        <DataProvider>
+        <RowsProvider>
           <App />
-        </DataProvider>
+        </RowsProvider>
       </FilterProvider>
     </SortProvider>
   </React.StrictMode>
