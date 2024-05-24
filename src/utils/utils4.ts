@@ -91,8 +91,8 @@ function sortRows(rows: RowType[], sort: SortType): RowType[] {
   return rows.sort((a, b) => {
     const { order, orderBy } = sort;
 
-    console.log("order:", order);
-    console.log("orderBy:", orderBy);
+    // console.log("order:", order);
+    // console.log("orderBy:", orderBy);
 
     if (isNull(a[orderBy])) return 1;
     if (isNull(b[orderBy])) return -1;
