@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { RowsContext } from "../context/RowsContext/RowsContext";
+import { RowsContext } from "../../context/RowsContext/RowsContext";
 
 export const useRowsContext = () => {
   const context = useContext(RowsContext);

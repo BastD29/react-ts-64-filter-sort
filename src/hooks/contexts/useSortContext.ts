@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { SortContext } from "../context/SortContext/SortContext";
+import { SortContext } from "../../context/SortContext/SortContext";
 
 export const useSortContext = () => {
   const context = useContext(SortContext);

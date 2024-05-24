@@ -1,7 +1,7 @@
 import { ChangeEvent, useEffect, useMemo } from "react";
-import { useRowsContext } from "../../hooks/useRowsContext";
-import { useFilterContext } from "../../hooks/useFilterContext";
-import { useSortContext } from "../../hooks/useSortContext";
+import { useRowsContext } from "../../hooks/contexts/useRowsContext";
+import { useFilterContext } from "../../hooks/contexts/useFilterContext";
+import { useSortContext } from "../../hooks/contexts/useSortContext";
 import {
   CLEAR_FILTER,
   CLEAR_SORT,
