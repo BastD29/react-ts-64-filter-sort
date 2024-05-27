@@ -1,6 +1,6 @@
 import { SelectHTMLAttributes } from "react";
-import style from "./Select.module.scss";
 import { OptionType } from "../../models/option";
+import style from "./Select.module.scss";
 
 type SelectProps = SelectHTMLAttributes<HTMLSelectElement> & {
   options: OptionType[];

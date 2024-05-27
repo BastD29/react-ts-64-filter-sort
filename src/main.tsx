@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./components/App/App7";
+import App from "./components/App/App8";
 import { RowsProvider } from "./context/RowsContext/RowsProvider";
 import { FilterProvider } from "./context/FilterContext/FilterProvider";
 import { SortProvider } from "./context/SortContext/SortProvider";
