@@ -1,0 +1,27 @@
+.dropdown {
+  width: 12%;
+  cursor: pointer;
+  position: relative;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    border: solid 1px black;
+    padding: 5px;
+  }
+
+  &__list {
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+    background-color: lightgray;
+  }
+
+  &__option {
+    padding: 5px;
+  }
+}

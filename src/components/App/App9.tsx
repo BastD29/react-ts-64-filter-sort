@@ -1,11 +1,11 @@
 import SearchInput from "../SearchInput/SearchInput3";
-import Select from "../Select/Select4";
 import Table from "../Table/Table2";
 import { useFilter } from "../../hooks/useFilter";
 import { useSort } from "../../hooks/useSort";
+import Dropdown from "../Dropdown/Dropdown";
 import style from "./App.module.scss";
 
-// * SAME COMPONENT AS APP 7 USING A REUSABLE CUSTOM SELECT COMPONENT
+// * SAME COMPONENT AS APP 8 USING A REUSABLE CUSTOM DROPDOWN COMPONENT
 
 const App: React.FC = () => {
   const { clearFilter, filters } = useFilter();
@@ -14,17 +14,17 @@ const App: React.FC = () => {
   return (
     <div className={style["app"]}>
       <SearchInput />
-      <Select
-        value={filters.is_manager || ""}
-        name="is_manager"
+      <Dropdown
         label="Is manager"
         dataKey="is_manager"
+        name="is_manager"
+        value={filters.is_manager || ""}
       />
-      <Select
-        value={filters.start_date || ""}
-        name="start_date"
+      <Dropdown
         label="Start date"
         dataKey="start_date"
+        name="start_date"
+        value={filters.start_date || ""}
       />
       <Table />
       <button className={style["app__button"]} onClick={clearFilter}>
